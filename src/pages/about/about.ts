@@ -24,14 +24,14 @@ export class AboutPage {
     'je suis un homme serieurs ',
     'j aime les annimaux',
     'jaime pas les con'
-    
+
 ];
 
 itemSelected(item: string) {
 
-	this.navCTRL.push("page-".item);
+	// this.navCTRL.push("page-".item);
 
-    console.log("Selected Item", item);
+  //   console.log("Selected Item", item);
 }
 
 }
