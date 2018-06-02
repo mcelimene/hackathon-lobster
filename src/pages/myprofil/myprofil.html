@@ -1,12 +1,12 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Profils</ion-title>
+    <ion-title>Inset List</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <ion-list inset>
-    <button id='1' ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
       {{ item }}
     </button>
   </ion-list>
