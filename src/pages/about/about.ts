@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-
 @Component({
   selector: 'page-about',
   templateUrl: 'about.html'
@@ -14,7 +13,6 @@ export class AboutPage {
 
 //Json de la bdd pour mon profils.
   items = [
-  	'photo',
     'Ipersky',
     'Password',
     '23',
@@ -28,10 +26,7 @@ export class AboutPage {
 ];
 
 itemSelected(item: string) {
-
-	// this.navCTRL.push("page-".item);
-
-  //   console.log("Selected Item", item);
+    console.log("Selected Item", item);
 }
 
 }
