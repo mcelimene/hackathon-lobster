@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Avatar List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list inset>
+    <ion-item *ngFor="let conv of convs" (click)="goToConv(conv)">  <!-- Lance la répétition de l'ion-item -->
+
+      <ion-avatar item-start >
+        <img src={{conv.Img}}>                                      <!-- Indique l'url de l'avatar de l'utilisateur -->
+      </ion-avatar>
+
+      <h2>{{ conv.Name }}, {{ conv.Age }} ans</h2>                  <!-- Indique le nom de l'utilisateur -->
+      <p>{{conv.msg}}</p>                                           <!-- Indique le dernier message reçu de l'utilisateur -->
+
+    </ion-item>                                                     <!-- Termine ion-item -->
+
+ </ion-list> 
+
+</ion-content>
