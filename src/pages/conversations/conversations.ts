@@ -12,25 +12,29 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @IonicPage()
 @Component({
   	selector: 'page-conversations',
-  	templateUrl: 'conversations.html',
+  	templateUrl: 'conversations.html', 
 })
 export class ConversationsPage {
+
   	constructor(public navCtrl: NavController, public navParams: NavParams) {
   	}
-
+    convs= 
+      [{Id:0, Name:'Charlotte', Age:18, Gender:"female", Img:"assets/imgs/logo.png", msg:"Salut!"},
+      { Id:1, Name:'Juliette', Age:20, Gender:"female", Img:"assets/imgs/logo.png", msg:"Salut! Bien ?"},
+      { Id:2, Name:'Marie', Age:22, Gender:"female", Img:"assets/imgs/logo.png", msg:"Salut! Bien ? Moi oui."}
+    ];
 
   	ionViewDidLoad() {
     	console.log('ionViewDidLoad ConversationsPage');
     	console.log('Chargement des conversations...');
-      
   	}
-      convs = [{Id:0, Name:'Charlotte', Age:18, Gender:"female", Img:"assets/imgs/logo.png", msg:"Salut!"},
-              { Id:1, Name:'Juliette', Age:20, Gender:"female", Img:"assets/imgs/logo.png", msg:"Salut! Bien ?"},
-              { Id:2, Name:'Marie', Age:22, Gender:"female", Img:"assets/imgs/logo.png", msg:"Salut! Bien ? Moi oui."}
-      ];
 
-    goToConv(conv: []){
-      console.log(conv);
-     // this.navCtrl.push(MessagesPage(conv));
+    callConv(id:int, name:string){
+      this.navCtrl.push(MessagesPage, {id:id, name:name});
+    }
+
+    goToConv(id: int, name: string){  
+      //console.log(id + ' ' + name);
+      this.callConv(id, name);
     };
 }

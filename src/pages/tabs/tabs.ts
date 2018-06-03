@@ -4,18 +4,16 @@ import { HomePage } from '../home/home';
 import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
 import { ConversationsPage } from '../conversations/conversations';
-import { MessagesPage } from '../messages/messages';
 
 @Component({
   templateUrl: 'tabs.html'
 })
-export class TabsPage {
+export class TabsPage { 
 
   tab1Root = HomePage;
   tab2Root = AboutPage;
   tab3Root = ContactPage;
   tab4Root = ConversationsPage; 
-  tab5Root = MessagesPage;   
 
   constructor() {
 
