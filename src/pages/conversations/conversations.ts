@@ -20,9 +20,9 @@ export class ConversationsPage {
 
   	}
     convs=
-      [{Id:0, Name:'Charlotte', Age:18, Gender:"female", Img:"assets/imgs/icon.png", msg:"Salut!"},
-      { Id:1, Name:'Juliette', Age:20, Gender:"female", Img:"assets/imgs/icon.png", msg:"Salut! Bien ?"},
-      { Id:2, Name:'Marie', Age:22, Gender:"female", Img:"assets/imgs/icon.png", msg:"Salut! Bien ? Moi oui."}
+      [{Id:0, Name:'Charlotte', Age:18, Gender:"female", Img:"assets/imgs/avatar2.png", msg:"Salut!"},
+      { Id:1, Name:'Juliette', Age:20, Gender:"female", Img:"assets/imgs/avatar3.png", msg:"Salut! Bien ?"},
+      { Id:2, Name:'Marie', Age:22, Gender:"female", Img:"assets/imgs/avatar4.png", msg:"Salut! Bien ? Moi oui."}
     ];
 
 
