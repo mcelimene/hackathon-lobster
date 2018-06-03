@@ -9,7 +9,7 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) { }
 
-  	goToProfil() {
+  goToProfil() {
     	this.navCtrl.push('page-profil');
   }
 
@@ -21,7 +21,7 @@ export class HomePage {
     	this.navCtrl.push('page-demandes');
   }
 
-  	goToMessages() {
+  goToMessages() {
     	this.navCtrl.push('page-messages');
   }
 
