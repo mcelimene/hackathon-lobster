@@ -29,9 +29,9 @@ export class AboutPage {
 
 itemSelected(item: string) {
 
-	this.navCTRL.push("page-".item);
+	//this.navCTRL.push("page-".item);
 
-    console.log("Selected Item", item);
+    //console.log("Selected Item", item);
 }
 
 }
