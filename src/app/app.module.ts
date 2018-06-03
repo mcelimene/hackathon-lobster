@@ -15,6 +15,7 @@ import { SigninPage } from '../pages/signin/signin';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AddMemberPage } from '../pages/add-member/add-member';
+import { AddMember2Page } from '../pages/add-member2/add-member2';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AddMemberPage } from '../pages/add-member/add-member';
     SigninPage,
     AuthPage,
     TabsPage,
-    AddMemberPage
+    AddMemberPage,
+    AddMember2Page
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import { AddMemberPage } from '../pages/add-member/add-member';
     AboutPage,
     ContactPage,
     HomePage,
-  AddMemberPage,
+    AddMemberPage,
+    AddMember2Page,
     ConversationsPage,
     MessagesPage,
     AuthPage,

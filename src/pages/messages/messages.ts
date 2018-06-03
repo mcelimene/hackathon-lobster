@@ -17,8 +17,8 @@ export class MessagesPage {
 
   	constructor(public navCtrl: NavController, public navParams: NavParams) {
 
-      this.name = navParams.get('name');
-      this.id = navParams.get('id');
+    //   this.name = navParams.get('name');
+    //   this.id = navParams.get('id');
   	}
 
   	ionViewDidLoad() {
@@ -30,7 +30,7 @@ export class MessagesPage {
   			{Id:0, Name:'Clémence', Age:20, Gender:"female", Img:"assets/imgs/logo.png", Msg:"Tu veux causer ?", Who:1},
   	];
 
-  	goToProfile(id: int){
+  	goToProfile(id: number){
   		console.log('dzeji');
   	}
 }
