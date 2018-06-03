@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
-import { SigninPage } from '../signin/signin';
+import { SigninPage } from '../authentication/signin/signin';
 import { ConversationsPage } from '../conversations/conversations';
 import { MessagesPage } from '../messages/messages';
-import { AuthPage } from '../auth/auth';
+import { AuthPage } from '../authentication/auth/auth';
 import { HomePage } from '../home/home';
 
 
