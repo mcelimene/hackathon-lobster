@@ -29,11 +29,11 @@ export class ConversationsPage {
     	console.log('Chargement des conversations...');
   	}
 
-    callConv(id:int, name:string){
-      this.navCtrl.push(MessagesPage, {id:id, name:name});
+    callConv(id: int, name: string){
+      this.navCtrl.push(MessagesPage, {id: id, name: name});
     }
 
-    goToConv(id: int, name: string){  
+    goToConv(id: int, name: string){   
       //console.log(id + ' ' + name);
       this.callConv(id, name);
     };

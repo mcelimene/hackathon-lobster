@@ -29,7 +29,7 @@ export class MessagesPage {
   			{Id:0, Name:'Clémence', Age:20, Gender:"female", Img:"assets/imgs/logo.png", Msg:"Tu veux causer ?", Who:1},
   	];
 
-  	goToProfile(id: int){ 
+  	goToProfile(id: int){  
   		console.log('dzeji');
   	}
 }
