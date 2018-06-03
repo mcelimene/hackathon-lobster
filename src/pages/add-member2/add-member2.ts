@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the AddMember2Page page.
@@ -20,6 +21,10 @@ export class AddMember2Page {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddMember2Page');
+  }
+
+  last() {
+    this.navCtrl.push(HomePage);
   }
 
 

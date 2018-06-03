@@ -14,15 +14,15 @@ export class ProfilPage {
 //Json de la bdd pour mon profils.
   items = [{
 
-    pseudo:'Ipersky',
+    pseudo:'McQueen75',
     passeword:'Password',
     age:'23',
     mail:'julienbraga@hotmail.fr',
-    sexe:'homme',
-    orientation:'femmes',
-    description:'je suis un homme serieux ',
-    aime:"j'aime les annimaux",
-    aimepas:"je n'aime pas les con"
+    sexe:'Homme',
+    orientation:' des femmes',
+    description:'Je suis un homme sérieux ',
+    aime:"J'aime les animaux",
+    aimepas:"Je n'aime pas le gâteau au chocolat"
 
 	//this.navCTRL.push("page-".item);
 
