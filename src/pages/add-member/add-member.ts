@@ -1,0 +1,30 @@
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AddMember2Page } from '../add-member2/add-member2';
+
+/**
+ * Generated class for the AddMemberPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+
+@IonicPage()
+@Component({
+  selector: 'page-add-member',
+  templateUrl: 'add-member.html',
+})
+export class AddMemberPage {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad AddMemberPage');
+  }
+
+  last() {
+    this.navCtrl.push(AddMember2Page);
+  }
+
+}

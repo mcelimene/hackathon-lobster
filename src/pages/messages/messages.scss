@@ -1,0 +1,19 @@
+page-messages {
+	.convList{
+		min-height:100%; 
+    	position:relative; 
+    	padding-bottom:[footer-height]
+	}
+	.chatBoxBottom{  
+		position: fixed;
+		position: absolute; 
+    	left: 0 ; right: 0; bottom: 0; 
+    	height:[footer-height] 
+	}
+	.leftMsg{
+  	   	padding-right: 5%;
+	}
+	.rightMsg{
+  	   	padding-left: 5%;
+	}
+}

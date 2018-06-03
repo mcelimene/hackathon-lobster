@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Conversation avec {{name}} </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  	<!-- 	<ion-card ion-item *ngFor="let conv of msg"> -->
+
+  	<!-- 		<ion-card-content> -->
+    <!-- 			{{ msg.msg }} -->
+ 	<!-- 		</ion-card-content> --> 
+
+	<!-- 	</ion-card> -->
+	<ion-list [virtualScroll]="conv" class="convList">
+
+  		<ion-item *virtualItem="let msg"  > <!-- Le message est reçu    -->
+  			<ion-item *ngIf="msg.Who == 0" class="leftMsg" (click)="goToProfile(msg.Id)">
+  				<ion-avatar item-start>
+	  	  		  	<ion-img src={{msg.Img}}></ion-img>
+	  	  		</ion-avatar>
+    		{{ msg.Msg }}
+			</ion-item>
+
+  			<ion-item *ngIf="msg.Who == 1" class="rightMsg">
+  				<ion-avatar item-end>
+	  	  		  	<ion-img src={{msg.Img}}></ion-img>
+	  	  		</ion-avatar>    		{{ msg.Msg }}
+			</ion-item>
+
+
+
+  		</ion-item>
+
+
+	</ion-list>
+ 	<ion-item class="chatBoxBottom">
+  	  	<ion-label color="primary">Inline Label</ion-label>
+  	  	<ion-input placeholder="Text Input"></ion-input>
+  	</ion-item>
+
+
+			<!--<ion-card  *ngFor="let conv of msg">
+				<ion-card-content>
+					Bonjour
+				</ion-card-content>
+				
+			</ion-card>-->
+
+
+</ion-content>
+
+

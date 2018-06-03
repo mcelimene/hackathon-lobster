@@ -6,6 +6,7 @@ import * as firebase from 'firebase';
 // import { AddMemberPage } from '../pages/add-member/add-member';
 import { TabsPage } from '../pages/tabs/tabs';
 // import { AuthPage } from '../pages/auth/auth';
+
 @Component({
   templateUrl: 'app.html'
 })
