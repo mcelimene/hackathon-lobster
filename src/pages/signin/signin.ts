@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { IonicPage, NavController } from 'ionic-angular';
+import { HomePage } from '../home/home';
+import { AuthService } from '../../services/auth.service';
 
 /**
  * Generated class for the SigninPage page.
@@ -13,13 +16,41 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-signin',
   templateUrl: 'signin.html',
 })
-export class SigninPage {
+export class SigninPage implements OnInit {
+	public signinForm: FormGroup;
+	public errorMessage: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  constructor(private formBuilder: FormBuilder,
+  						private authService: AuthService,
+  						private navCtrl: NavController){}
+
+  ngOnInit() {
+    this.initForm();
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SigninPage');
+  initForm() {
+    this.signinForm = this.formBuilder.group({
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.pattern(/[0-9a-zA-Z]{6,}/)]]
+    });
   }
+
+  signin(){
+    const email = this.signinForm.get('email').value;
+    const password = this.signinForm.get('password').value;
+
+    this.authService.signInUser(email, password).then(
+      () => {
+      	console.log('connecté');
+        this.navCtrl.setRoot(HomePage);
+      },
+      (error) => {
+        this.errorMessage = error;
+        console.log(this.errorMessage);
+      }
+    );
+  }
+
 
 }

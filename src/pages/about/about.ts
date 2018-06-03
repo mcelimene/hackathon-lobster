@@ -25,10 +25,15 @@ export class AboutPage {
     aimepas:'jaime pas les con',
     philosophi:"Avant l'heur c'est deja l'heur a l'heur c'est l'heur apres l'heur tu degages " 
 
+	//this.navCTRL.push("page-".item);
+
+    //console.log("Selected Item", item);
+
 }];
 
 itemSelected(item: string) {
     console.log("Selected Item", item);
+
 }
 
 }

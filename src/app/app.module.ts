@@ -14,8 +14,11 @@ import { SigninPage } from '../pages/signin/signin';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { AuthService } from '../services/auth.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddMemberPage } from '../pages/add-member/add-member';
 import { AddMember2Page } from '../pages/add-member2/add-member2';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +36,9 @@ import { AddMember2Page } from '../pages/add-member2/add-member2';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    FormsModule,
+    ReactiveFormsModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -46,12 +51,14 @@ import { AddMember2Page } from '../pages/add-member2/add-member2';
     ConversationsPage,
     MessagesPage,
     AuthPage,
+    SigninPage,
     TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthService
   ]
 })
 export class AppModule {}
