@@ -12,21 +12,28 @@ export class AboutPage {
   }
 
 //Json de la bdd pour mon profils.
-  items = [
-    'Ipersky',
-    'Password',
-    '23',
-    'julienbraga@hotmail.fr',
-    'homme',
-    'femme ',
-    'je suis un homme serieurs ',
-    'j aime les annimaux',
-    'jaime pas les con'
+  items = [{
 
-];
+    pseudo:'Ipersky',
+    mdp:'Password',
+    age:'23',
+    mail:'julienbraga@hotmail.fr',
+    sexe:'homme',
+    orientation:'femme ',
+    description:'je suis un homme serieurs ',
+    aime:'j aime les annimaux',
+    aimepas:'jaime pas les con',
+    philosophi:"Avant l'heur c'est deja l'heur a l'heur c'est l'heur apres l'heur tu degages " 
+
+	//this.navCTRL.push("page-".item);
+
+    //console.log("Selected Item", item);
+
+}];
 
 itemSelected(item: string) {
     console.log("Selected Item", item);
+
 }
 
 }

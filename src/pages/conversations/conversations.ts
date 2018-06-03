@@ -12,14 +12,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @IonicPage()
 @Component({
   	selector: 'page-conversations',
-  	templateUrl: 'conversations.html', 
+  	templateUrl: 'conversations.html',
 })
 export class ConversationsPage {
 
   	constructor(public navCtrl: NavController, public navParams: NavParams) {
       
   	}
-    convs= 
+    convs=
       [{Id:0, Name:'Charlotte', Age:18, Gender:"female", Img:"assets/imgs/logo.png", msg:"Salut!"},
       { Id:1, Name:'Juliette', Age:20, Gender:"female", Img:"assets/imgs/logo.png", msg:"Salut! Bien ?"},
       { Id:2, Name:'Marie', Age:22, Gender:"female", Img:"assets/imgs/logo.png", msg:"Salut! Bien ? Moi oui."}
@@ -34,8 +34,9 @@ export class ConversationsPage {
     callConv(id: number, name: string){
       this.navCtrl.push(MessagesPage, {id: id, name: name});
     }
-
+  
     goToConv(id: number, name: string){   
+
       //console.log(id + ' ' + name);
       this.callConv(id, name);
     };

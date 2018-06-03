@@ -23,6 +23,7 @@ export class MessagesPage {
   	constructor(public navCtrl: NavController, public navParams: NavParams) {
       	this.name = navParams.get('name');
       	this.id = navParams.get('id');
+
   	}
  
   	ionViewDidLoad() {
@@ -45,5 +46,6 @@ export class MessagesPage {
 
   	goToProfile(id: number){
   		console.log(id);
+
   	}
 }
