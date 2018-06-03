@@ -1,42 +1,64 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="orange">
     <ion-title text-center>PROFIL</ion-title>
-    <ion-title>Connexion</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
-  <ion-item>
-    <ion-avatar>
-        <img src="">
-    </ion-avatar>
-    <h2>McQueen75</h2>
-  </ion-item>
+<ion-grid>
+
+  <ion-row>
+    <ion-col col offset-3>
+      <ion-item no-lines>
+        <ion-avatar>
+            <img id="imgAvatar" src="../assets/imgs/avatar_masulin2_transparent.png">
+        </ion-avatar>
+        <h2 ion-text color="orange">McQueen75</h2>
+      </ion-item>
+    </ion-col>
+  </ion-row>
 
 
+  <ion-row>
+    <ion-col col>
+      <ion-item no-lines (click)="goToProfil()">
+        <ion-thumbnail>
+          <img id="img1" src="../assets/imgs/profils.png">
+        </ion-thumbnail>
+      </ion-item>
+    </ion-col>
 
-  <ion-item no-lines>
-    <ion-thumbnail>
-      <ion-icon ios="ios-person" md="md-person"><h2>profil</h2></ion-icon></ion-thumbnail>
-  </ion-item>
+    <ion-col col>
+     <ion-item no-lines (click)="goToRadar()">
+        <ion-thumbnail>
+          <img id="img2" src="../assets/imgs/radar.png">
+        </ion-thumbnail>
+     </ion-item>
+    </ion-col>
+  </ion-row>
 
-  <ion-item>
-    <ion-thumbnail>
-      <ion-icon ios="ios-text" md="md-text"><h2>radar</h2></ion-icon>
-    </ion-thumbnail>
-  </ion-item>
 
-  <ion-item>
-    <ion-thumbnail>
-      <ion-icon ios="ios-text" md="md-text"><h2>messages</h2></ion-icon>
-    </ion-thumbnail>
-  </ion-item>
+  <ion-row>
+    <ion-col col>
+      <ion-item no-lines (click)="goToDemandes()">
+        <ion-thumbnail>
+          <img id="img3" src="../assets/imgs/messages.png">
+        </ion-thumbnail>
+      </ion-item>
 
-  <ion-item>
-    <ion-thumbnail>
-      <ion-icon ios="ios-person" md="md-person"><h2>demandes</h2></ion-icon>
-    </ion-thumbnail>
-  </ion-item>
+    </ion-col>
+
+    <ion-col col>
+      <ion-item no-lines (click)="goToMessages()">
+        <ion-thumbnail>
+          <img id="img4" src="../assets/imgs/demandes.png">
+        </ion-thumbnail>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+
+</ion-grid>
 
 </ion-content>
