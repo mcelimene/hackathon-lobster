@@ -10,6 +10,7 @@ import { ConversationsPage } from '../pages/conversations/conversations';
 import { MessagesPage } from '../pages/messages/messages';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SigninPage } from '../pages/signin/signin';
+import { AddMemberPage } from '../pages/add-member/add-member';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';

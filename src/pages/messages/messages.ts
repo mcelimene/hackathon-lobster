@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ConversationsPage } from '../conversations/conversations';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
@@ -8,29 +9,43 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+
+@IonicPage() 
 @Component({
   selector: 'page-messages',
-  templateUrl: 'messages.html',
+  templateUrl: 'messages.html',  
 })
 export class MessagesPage {
+	name: string = null;
+	id: number = null ;
+	load: string = null;
 
   	constructor(public navCtrl: NavController, public navParams: NavParams) {
+      	this.name = navParams.get('name');
+      	this.id = navParams.get('id');
 
-    //   this.name = navParams.get('name');
-    //   this.id = navParams.get('id');
+  	}
+ 
+  	ionViewDidLoad() {
+  	  	if(this.name && this.id) {
+  	  		this.load = "loadedFrom";
+  	  	}
+  	  	console.log(this);
   	}
 
-  	ionViewDidLoad() {
-  	  	console.log('ionViewDidLoad MessagesPage');
+  	ionViewWillLeave() {
+  		if(this.load == "loadedFrom"){
+	  	  	this.navCtrl.pop();
+  		  	this.navCtrl.push(ConversationsPage);
+  		}
   	}
 
   	conv = [{Id:0, Name:'Charlotte', Age:18, Gender:"female", Img:"assets/imgs/logo.png", Msg:"Salut c'est charlotte.", Who:0},
-  			{Id:0, Name:'Charline', Age:19, Gender:"female", Img:"assets/imgs/logo.png", Msg:"Enchanté ! ", Who:1},
-  			{Id:0, Name:'Clémence', Age:20, Gender:"female", Img:"assets/imgs/logo.png", Msg:"Tu veux causer ?", Who:1},
-  	];
+  			{Id:1, Name:'Charline', Age:19, Gender:"female", Img:"assets/imgs/logo.png", Msg:"Enchanté ! ", Who:1},
+  			{Id:2, Name:'Clémence', Age:20, Gender:"female", Img:"assets/imgs/logo.png", Msg:"Tu veux causer ?", Who:1}];
 
   	goToProfile(id: number){
-  		console.log('dzeji');
+  		console.log(id);
+
   	}
 }
