@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the AuthPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { AddMemberPage } from '../add-member/add-member';
+import { SigninPage } from '../signin/signin';
 
 @IonicPage()
 @Component({
@@ -20,6 +15,14 @@ export class AuthPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AuthPage');
+  }
+
+  register() {
+    this.navCtrl.push(AddMemberPage);
+  }
+
+  connect() {
+    this.navCtrl.push(SigninPage);
   }
 
 }

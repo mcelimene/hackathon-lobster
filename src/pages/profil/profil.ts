@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-about',
-  templateUrl: 'about.html'
+  selector: 'page-profil',
+  templateUrl: 'profil.html'
 })
-export class AboutPage {
+export class ProfilPage {
 
   constructor(public navCtrl: NavController) {
 
@@ -15,20 +15,24 @@ export class AboutPage {
   items = [{
 
     pseudo:'Ipersky',
-    mdp:'Password',
+    passeword:'Password',
     age:'23',
     mail:'julienbraga@hotmail.fr',
     sexe:'homme',
-    orientation:'femme ',
-    description:'je suis un homme serieurs ',
-    aime:'j aime les annimaux',
-    aimepas:'jaime pas les con',
-    philosophi:"Avant l'heur c'est deja l'heur a l'heur c'est l'heur apres l'heur tu degages " 
+    orientation:'femmes',
+    description:'je suis un homme serieux ',
+    aime:"j'aime les annimaux",
+    aimepas:"je n'aime pas les con"
+
+	//this.navCTRL.push("page-".item);
+
+    //console.log("Selected Item", item);
 
 }];
 
 itemSelected(item: string) {
     console.log("Selected Item", item);
+
 }
 
 }
