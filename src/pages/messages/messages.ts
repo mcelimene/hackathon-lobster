@@ -18,12 +18,12 @@ export class MessagesPage {
   	constructor(public navCtrl: NavController, public navParams: NavParams) {
   	}
 
-  	ionViewDidLoad() {
-  	  	console.log('ionViewDidLoad MessagesPage');
-  	}
+  	// ionViewDidLoad() {
+  	//   	console.log('ionViewDidLoad MessagesPage');
+  	// }
 
-  	conv = [{Id:0, Name:'Charlotte', Age:18, Gender:"female", Img:"assets/imgs/logo.png", msg:""},
-  			{Id:0, Name:'Charlotte', Age:18, Gender:"female", Img:"assets/imgs/logo.png", msg:""},
-  			{Id:0, Name:'Charlotte', Age:18, Gender:"female", Img:"assets/imgs/logo.png", msg:""},
-  	];
+  	// conv = [{Id:0, Name:'Charlotte', Age:18, Gender:"female", Img:"assets/imgs/logo.png", msg:""},
+  	// 		{Id:0, Name:'Charlotte', Age:18, Gender:"female", Img:"assets/imgs/logo.png", msg:""},
+  	// 		{Id:0, Name:'Charlotte', Age:18, Gender:"female", Img:"assets/imgs/logo.png", msg:""},
+  	// ];
 }
