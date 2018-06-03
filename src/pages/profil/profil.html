@@ -1,12 +1,12 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Profils</ion-title>
+  <ion-navbar color="orange">
+    <ion-title>PROFIL</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content >
   <ion-list  ion-item *ngFor="let item of items" inset>
-   
+
 <ion-grid  ion-text color='orange'>
   <ion-row>
     <ion-col >
@@ -18,7 +18,7 @@
       <img id='profils' src='../assets/imgs/profil.jpg' alt='photo de profils'>
     </ion-col>
   </ion-row>
-  
+
 </ion-grid>
 <hr>
   	<div ion-text color='orange'>
@@ -26,9 +26,8 @@
 	    <h2>Je recherche :{{item.orientation}}</h2>
 	    <h2>{{item.aime}}</h2>
 	    <h2>{{item.aimepas}}</h2>
-	   <p overflow>"{{item.philosophi}}"</p>
-	</div>   
+	</div>
 
 </ion-list>
-  
+
 </ion-content>

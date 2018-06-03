@@ -3,9 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
+import { ProfilPage } from '../pages/profil/profil';
 import { AuthPage } from '../pages/auth/auth';
-import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { ConversationsPage } from '../pages/conversations/conversations';
 import { MessagesPage } from '../pages/messages/messages';
@@ -23,8 +22,7 @@ import { AddMember2Page } from '../pages/add-member2/add-member2';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
+    ProfilPage,
     ConversationsPage,
     MessagesPage,
     HomePage,
@@ -43,8 +41,7 @@ import { AddMember2Page } from '../pages/add-member2/add-member2';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
+    ProfilPage,
     HomePage,
     AddMemberPage,
     AddMember2Page,

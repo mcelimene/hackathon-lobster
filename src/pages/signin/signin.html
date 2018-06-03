@@ -1,3 +1,11 @@
+<ion-header>
+
+  <ion-navbar color="orange">
+    <ion-title>PROFIL</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
 <ion-content padding class="center">
 	<ion-img src="./assets/imgs/logo.jpg"></ion-img>
 	<form (ngSubmit)="signin()" [formGroup]="signinForm">
@@ -13,7 +21,7 @@
       </ion-item>
 
     </ion-list>
-    
+
     <div padding-horizontal>
       <button ion-button full type="submit" [disabled]="!signinForm.valid" color="orange" round outline block>connexion</button>
       <div class="login-footer">
