@@ -25,8 +25,8 @@ export class MessagesPage {
   	} 
 
   	conv = [{Id:0, Name:'Charlotte', Age:18, Gender:"female", Img:"assets/imgs/logo.png", Msg:"Salut c'est charlotte.", Who:0},
-  			{Id:0, Name:'Charline', Age:19, Gender:"female", Img:"assets/imgs/logo.png", Msg:"Enchanté ! ", Who:1},
-  			{Id:0, Name:'Clémence', Age:20, Gender:"female", Img:"assets/imgs/logo.png", Msg:"Tu veux causer ?", Who:1},
+  			{Id:1, Name:'Charline', Age:19, Gender:"female", Img:"assets/imgs/logo.png", Msg:"Enchanté ! ", Who:1},
+  			{Id:2, Name:'Clémence', Age:20, Gender:"female", Img:"assets/imgs/logo.png", Msg:"Tu veux causer ?", Who:1},
   	];
 
   	goToProfile(id: int){  

@@ -4,7 +4,7 @@ import { HomePage } from '../home/home';
 import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
 import { ConversationsPage } from '../conversations/conversations';
-
+import {MessagesPage} from '../messages/messages';
 import { HomePage } from '../home/home';
 import { AuthPage } from '../auth/auth';
 
