@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { IonicPage, NavController } from 'ionic-angular';
-import { HomePage } from '../home/home';
-import { AuthService } from '../../services/auth.service';
+import { HomePage } from '../../home/home';
+import { AuthService } from '../../../services/auth.service';
+import { AuthPage } from '../auth/auth';
+import { AddMemberPage } from '../add-member/add-member';
+import { AddMember2Page } from '../add-member2/add-member2';
 
 /**
  * Generated class for the SigninPage page.
@@ -19,6 +22,7 @@ import { AuthService } from '../../services/auth.service';
 export class SigninPage implements OnInit {
 	public signinForm: FormGroup;
 	public errorMessage: string;
+  public isAuth: boolean = false;
 
 
   constructor(private formBuilder: FormBuilder,
@@ -44,6 +48,10 @@ export class SigninPage implements OnInit {
       () => {
       	console.log('connecté');
         this.navCtrl.setRoot(HomePage);
+        this.isAuth = true;
+        //this.navCtrl.push(AuthPage, {
+          //data: this.isAuth
+        //});
       },
       (error) => {
         this.errorMessage = error;
